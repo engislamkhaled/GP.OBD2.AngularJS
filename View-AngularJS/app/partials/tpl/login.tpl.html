@@ -1,0 +1,33 @@
+
+
+<body>
+<div class="bs-example">
+	<div class="container">
+		<div class="top">
+			<h1 id="title"><span id="logo">Car obd <span>UI</span></span></h1>
+		</div>
+		<div class="login-box animated fadeInUp">
+			<div class="box-header">
+				<h2>Log In</h2>
+			</div>
+
+
+      <form role="form" name="form1">
+        <div class="form-group">
+        	<p>Welcome : <span>{{user.mail}}</span></p>
+          <label for="exampleInputEmail1">Mail</label>
+          <input type="text" placeholder="Enter name"  class="form-control" ng-model="user.mail" required>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" placeholder="Password" id="exampleInputPassword1" class="form-control" ng-model="user.pass" required>
+        </div>
+        <button class="btn btn-default" type="submit" ng-click="login(user)" ng-disabled="form1.$invalid">Submit</button>
+        <p>{{msgtxt}}</p>
+      </form>
+
+      </div>
+		</div>
+	</div>
+<br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  
+</body>
